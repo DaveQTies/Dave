@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8F5EC;
+    color: #1E2A44;
+    line-height: 1.7;
+}
+
+/* HEADER */
+.header-container {
+    background: #1E2A44;
+    color: #F4C430;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 85px;
+}
+
+.header-text h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.header-text p {
+    color: #E6D8A8;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #B11226;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #F4C430;
+    color: #1E2A44;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #B11226;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-left: 5px solid #F4C430;
+    padding-left: 10px;
+}
+
+/* ARTICLES */
+article {
+    background: #FFFDF7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #E6D8A8;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+article img {
+    width: 180px;
+    border-radius: 8px;
+}
+
+article h3, article h4 {
+    margin-bottom: 8px;
+}
+
+/* AUDIO */
+audio {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #1E2A44;
+    color: #F4C430;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    article img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    main {
+        padding: 25px;
+    }
+}
